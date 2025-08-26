@@ -1,0 +1,33 @@
+/* Layout */
+.container { max-width: 1200px; margin: 0 auto; padding: 16px; }
+.layout { display: grid; grid-template-columns: 280px 1fr 300px; gap: 16px; }
+
+.navbar { position: sticky; top:0; z-index:10; display:flex; justify-content:space-between;
+  align-items:center; padding:12px 16px; background:#fff; border-bottom:1px solid #eaeaea; }
+.navbar .brand { font-weight:700; }
+.navbar .links a, .navbar .links .logout { margin-left:12px; border:none; background:none; cursor:pointer; font-weight:600; }
+
+.card { background:#fff; border:1px solid #eee; border-radius:12px; padding:14px; margin-bottom:16px; }
+.search { width:100%; padding:10px; border:1px solid #ddd; border-radius:8px; }
+
+.btn-primary { margin-top:10px; width:100%; padding:10px; border:none; background:#0077ff; color:#fff; border-radius:8px; cursor:pointer; }
+.flash.success { background:#e7f8ec; color:#137a2a; padding:8px; border-radius:8px; margin-bottom:8px; }
+.flash.error { background:#ffecec; color:#a00; padding:8px; border-radius:8px; margin-bottom:8px; }
+
+/* Feed */
+.post { background:#fff; border:1px solid #eee; border-radius:14px; padding:14px; margin-bottom:16px; }
+.post-header { display:flex; gap:10px; align-items:center; }
+.avatar { width:36px; height:36px; border-radius:50%; background:#f3f6fb; display:flex; align-items:center; justify-content:center; font-weight:700; }
+.name { font-weight:700; }
+.time { font-size:12px; color:#777; }
+.content { margin:8px 0 10px; }
+.media img, .media video { width:100%; border-radius:12px; }
+
+.actions { display:flex; gap:10px; margin-top:10px; }
+.actions button { border:1px solid #eee; background:#fafafa; padding:8px 10px; border-radius:8px; cursor:pointer; }
+
+.stats div { margin:6px 0; }
+.mini-chart { margin-top:12px; padding:10px; background:#f8f9fb; border-radius:8px; text-align:center; color:#888; }
+
+/* Mobile */
+@media (max-width: 992px) { .layout { grid-template-columns: 1fr; } }

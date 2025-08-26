@@ -1,0 +1,133 @@
+/* ================================
+   RwaConnect Style (Inspired by IG/YT)
+   ================================ */
+
+:root {
+    --rwanda-blue: #2066b1;
+    --rwanda-yellow: #fdd116;
+    --rwanda-green: #00a859;
+    --dark-bg: #0d0d0d;
+    --light-text: #f5f5f5;
+    --muted-text: #b3b3b3;
+}
+
+/* General */
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #111;
+    height: 100vh;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-right: 2px solid var(--rwanda-blue);
+    position: fixed;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--light-text);
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background: var(--rwanda-blue);
+    color: white;
+}
+
+/* Active link */
+.sidebar a.active {
+    background: var(--rwanda-yellow);
+    color: #000;
+}
+
+/* Feed */
+.feed {
+    margin-left: 260px;
+    flex: 1;
+    padding: 20px;
+    max-width: 700px;
+}
+
+.post {
+    background: #1a1a1a;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    background: var(--rwanda-green);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.post .content {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.post img, .post video {
+    width: 100%;
+    margin-top: 12px;
+    border-radius: 10px;
+}
+
+/* Right Sidebar (Trending / Analytics) */
+.rightbar {
+    width: 300px;
+    padding: 20px;
+    background: #111;
+    border-left: 2px solid var(--rwanda-green);
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+}
+
+.rightbar h3 {
+    color: var(--rwanda-yellow);
+}
+
+/* Buttons */
+button, .btn-primary {
+    background: var(--rwanda-blue);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover, .btn-primary:hover {
+    background: var(--rwanda-green);
+}
